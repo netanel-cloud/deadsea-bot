@@ -1,0 +1,19 @@
+# משתני סביבה — העתיקו קובץ זה ל-.env ומלאו את הערכים
+
+# ── Anthropic (Claude) ──────────────────────────────
+# קבלו מ: https://console.anthropic.com
+ANTHROPIC_API_KEY=sk-ant-api03-...
+
+# ── Meta WhatsApp Cloud API ─────────────────────────
+# Phone Number ID: Meta App Dashboard → WhatsApp → Getting Started
+META_PHONE_NUMBER_ID=1234567890123456
+
+# Access Token: Meta App Dashboard → WhatsApp → Getting Started
+# לפרודקשן: צרו System User Token שלא פג תוקף
+META_WA_TOKEN=EAAxxxxxxxxxxxxxx...
+
+# Verify Token: בחרו מחרוזת כלשהי (שמרו אותה — תצטרכו אותה ב-Meta Dashboard)
+META_VERIFY_TOKEN=deadsea_secret_2024
+
+# ── Server ──────────────────────────────────────────
+PORT=3000
