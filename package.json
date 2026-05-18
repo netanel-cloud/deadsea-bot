@@ -1,3 +1,14 @@
-.env
-node_modules/
-*.log
+{
+  "name": "deadsea-bot",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "@anthropic-ai/sdk": "^0.39.0",
+    "axios": "^1.7.0",
+    "cors": "^2.8.5"
+  }
+}
