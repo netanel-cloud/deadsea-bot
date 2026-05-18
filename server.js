@@ -16,7 +16,7 @@ app.use(cors({
 }));
 
 // ── Static files: serve the widget JS ────────────────────
-app.use(express.static(join(__dirname, 'widget')));
+app.use(express.static(__dirname));
 
 // ── Clients ──────────────────────────────────────────────
 const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
