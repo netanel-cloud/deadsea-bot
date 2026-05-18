@@ -62,7 +62,7 @@ app.post('/api/chat', async (req, res) => {
     const trimmed = messages.slice(-MAX_MESSAGES);
 
     const response = await anthropic.messages.create({
-      model:      'claude-haiku-4-5',
+      model:      'claude-sonnet-4-5',
       max_tokens: 700,
       system:     SYSTEM_PROMPT,
       messages:   trimmed,
@@ -117,7 +117,7 @@ app.post('/webhook', async (req, res) => {
     if (history.length > MAX_MESSAGES) history.splice(0, 2);
 
     const response = await anthropic.messages.create({
-      model:      'claude-haiku-4-5',
+      model:      'claude-sonnet-4-5',
       max_tokens: 700,
       system:     SYSTEM_PROMPT,
       messages:   history,
